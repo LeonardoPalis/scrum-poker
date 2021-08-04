@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-scrumpoker-staging-05001-authRole",
+      "UnauthRoleArn": "arn:aws:iam::522703061577:role/amplify-scrumpoker-staging-05001-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::522703061577:role/amplify-scrumpoker-staging-05001-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-scrumpoker-staging-05001-deployment",
+      "UnauthRoleName": "amplify-scrumpoker-staging-05001-unauthRole",
+      "StackName": "amplify-scrumpoker-staging-05001",
+      "StackId": "arn:aws:cloudformation:us-east-1:522703061577:stack/amplify-scrumpoker-staging-05001/99b6fb70-db98-11eb-9e52-0a4ced5e22b5",
+      "AmplifyAppId": "d1mt4fn2ncvfrz"
+    },
+    "categories": {
+      "function": {
+        "scrumpoker87f10223": {
+          "deploymentBucketName": "amplify-scrumpoker-staging-05001-deployment",
+          "s3Key": "amplify-builds/scrumpoker87f10223-6a31666f5065312b6a67-build.zip"
+        }
+      }
+    }
+  }
+}
