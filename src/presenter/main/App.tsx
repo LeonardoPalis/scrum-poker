@@ -1,9 +1,11 @@
 import "./App.css";
-import { GamePage } from "./presenter/pages/game";
+import { GamePage } from "../pages/game";
 import Amplify from "aws-amplify";
-import awsconfig from "./aws-exports";
+import awsconfig from "../../infra/aws-config/aws-exports";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "./presenter/pages/home";
+import { Home } from "../pages/home";
+import ReactDOM from "react-dom";
+import React from "react";
 
 function App() {
   Amplify.configure(awsconfig);
@@ -16,7 +18,7 @@ function App() {
             <GamePage />
           </Route>
           <Route path="/">
-             <Home />
+            <Home />
           </Route>
         </Switch>
       </Router>
@@ -24,4 +26,11 @@ function App() {
   );
 }
 
-export default App;
+export function initializeApp() {
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    document.getElementById("root")
+  );
+}
